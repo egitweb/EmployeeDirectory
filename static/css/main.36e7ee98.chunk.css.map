@@ -1,1 +1,0 @@
-{"version":3,"sources":["webpack://src/App.css"],"names":[],"mappings":"AAAA,QACI,kBAAmB,CACnB,YAAa,CACb,gBACF,CAEA,YACE,WACF","file":"main.36e7ee98.chunk.css","sourcesContent":[".banner{\n    background: #f9b713;\n    height: 200px;\n    padding-top: 50px;\n  }\n  \n  .search-bar{\n    width: 400px;\n  }"]}
