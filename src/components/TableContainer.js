@@ -1,6 +1,10 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 const Table = ({ users }) => {
+  const [sortedUsers, updateSortedUsers] = useState([]);
+
+  useEffect(() => updateSortedUsers(users), [users]);
+  
 
   return (
     <div>
@@ -19,7 +23,32 @@ const Table = ({ users }) => {
             <th scope="col">ZipCode</th> 
           </tr>
         </thead>
-        
+        <tbody>
+          {/* Data to Show on Columns */}
+          {sortedUsers.map(
+            ({
+              picture: { thumbnail },
+              name: { first, last },
+              gender,
+              phone,
+              email,
+              dob:{age},
+              location: {  state, country, postcode }
+            }) => (
+              <tr key={email}>
+                <td><img src={thumbnail} alt=""/></td>
+                <th>{first} {last}</th>
+                <td>{gender}</td>
+                <td>{phone}</td>
+                <td>{email}</td>
+                <td>{age}</td>
+                <td>{state}</td>
+                <td>{country}</td>
+                <td>{postcode}</td>
+              </tr>
+            )
+          )}
+        </tbody>
       </table>
     </div>
   );
