@@ -1,10 +1,6 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 
 const Table = ({ users }) => {
-  const [sortedUsers, updateSortedUsers] = useState([]);
-
-  useEffect(() => updateSortedUsers(users), [users]);
-  
 
   return (
     <div>
