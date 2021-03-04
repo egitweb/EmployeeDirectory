@@ -3,7 +3,7 @@ Employee Directory Web App Created with ReactJS.
 
 <h3>Preview:</h3>
 <p align="center">
-  <img src="#" height="40%" width="50%" title="budget-Tracker Preview">
+  <img src="https://raw.githubusercontent.com/egitweb/EmployeeDirectory/main/employee-directoy-app-preview.png" height="40%" width="50%" title="EmployeeDirectory Preview">
 </p>
 
 # Table of Contents 
